@@ -304,3 +304,24 @@ Component({
 ```
 
 小程序代码片段链接：https://developers.weixin.qq.com/s/99vhg4mi7OlT
+
+
+
+补充优化：
+
+当src属性为空时，不会触发error事件，需对src监听处理
+
+```javascript
+observers: {
+    src(){
+      if(this.data.src == ''){
+        // src 为空时不会触发error事件，直接使用错误图片替换
+        this.setData({
+          src: this.data.errorImage
+        })
+      }
+    }
+  },
+```
+
+小程序代码片段链接：https://developers.weixin.qq.com/s/xarXU5mn78lW
