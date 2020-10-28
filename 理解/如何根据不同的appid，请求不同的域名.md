@@ -12,10 +12,10 @@ https://developers.weixin.qq.com/community/develop/doc/000ee4324589282b866afb00c
 
 ```json
 {
-	miniProgram: {
-        appId: 'xxxxxxxxxxxxxxx',
-        envVersion: 'develop', // develop：开发版， trial：体验版，release：发布版
-        version: ''
+	"miniProgram": {
+        "appId": "xxxxxxxxxxxxxxx",
+        "envVersion": "develop", // develop：开发版， trial：体验版，release：发布版
+        "version": ""
     }
 }
 ```
@@ -24,14 +24,14 @@ https://developers.weixin.qq.com/community/develop/doc/000ee4324589282b866afb00c
 
 ```json
 {
-	env: {
-        prod: {
-            appId: '[正式版appid]',
-            baseUrl: '[正式版请求地址]'
+	"env": {
+        "prod": {
+            "appId": "[正式版appid]",
+            "baseUrl": "[正式版请求地址]"
         },
-        dev: {
-            appId: '[测试版appid]',
-            baseUrl: '[测试版请求地址]',
+        "dev": {
+            "appId": "[测试版appid]",
+            "baseUrl": "[测试版请求地址]",
         }
     }
 }
